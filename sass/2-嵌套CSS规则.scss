@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*俄罗斯套娃一样嵌套CSS*/
+#content {
+    article {
+        h1 {
+            color: #333
+        }
+
+        p {
+            margin-bottom: 1.4em
+        }
+    }
+
+    aside {
+        background-color: #EEE
+    }
+}
+
+/*伪类嵌套的问题，错误示范*/
+/*可以发现元素和伪类并没有连在一起*/
+.box {
+    :hover {
+        color: blue;
+    }
+}
+
+/*解决伪类嵌套问题的方法，加‘&’符号，代表‘父选择器’*/
+.box {
+    &:hover {
+        color: #333333;
+    }
+}
+
+/*使用‘&’进行反向嵌套*/
+.box a {
+    color: aqua;
+    #zoom & {
+        color: red;
+    }
+}
+
+/*群组选择器的嵌套*/
+.box {
+    h1, h2, h3 {
+        text-decoration: red;
+    }
+}
+
+#zoom, #content {
+    .box {
+        width: 50px;
+    }
+}

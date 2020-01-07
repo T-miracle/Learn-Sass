@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.maok-bg {
+  font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetic, "Liberation Sans", sans-serif;
+  background-color: red;
+  border: 5px solid black;
+  margin-top: 5px;
+}
+
+.maok-text {
+  content: "文本";
+}
+
+.maok-box {
+  margin: 1px 5px;
+}
+
+.maok-liner {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=1-%B1%E4%C1%BF%C9%F9%C3%F7.css.map */

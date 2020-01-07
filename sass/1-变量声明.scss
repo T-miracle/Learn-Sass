@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+//单个属性值
+$color: red;
+$basic-margin-top: 5px;
+
+//多个空格分割的属性值
+$basic-border: 5px solid black;
+
+//多个逗号分割的属性值
+$plain-font: "Myriad Pro", Myriad, "Helvetica Neue", Helvetic, "Liberation Sans", sans-serif;
+
+//引用变量
+.maok-bg {
+    font-family: $plain-font;
+    background-color: $color;
+    border: $basic-border;
+    margin-top: $basic-margin-top;
+}
+
+.maok-text {
+    //块内变量，只能在块内使用
+    $text: "文本";
+    content: $text;
+}
+
+//变量嵌套的使用
+$basic-margin: 1px $basic-margin-top;
+
+.maok-box {
+    margin: $basic-margin;
+}
+
+//中划线和下划线是等同的
+$this-liner: none;
+
+.maok-liner {
+    text-decoration: $this_liner;
+}
