@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*原生CSS导入*/
+@import "http://www.sass.hk/css/css.css";
+/*导入其他Sass文件以实现复用CSS代码*/
+.maok-bg {
+  font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetic, "Liberation Sans", sans-serif;
+  background-color: red;
+  border: 5px solid black;
+  margin-top: 5px;
+}
+
+.maok-text {
+  content: "文本";
+}
+
+.maok-box {
+  margin: 1px 5px;
+}
+
+.maok-liner {
+  text-decoration: none;
+}
+
+.nav {
+  border: 5px solid black;
+  text-decoration: red;
+}
+
+/*CSS内导入*/
+.body-bg {
+  border: #333333;
+}
+.body-bg .bg {
+  background-color: #cccccc;
+}
+
+/*# sourceMappingURL=3-%B5%BC%C8%EBSass%CE%C4%BC%FE.css.map */

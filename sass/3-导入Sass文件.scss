@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*原生CSS导入*/
+@import "http://www.sass.hk/css/css.css";
+    
+/*导入其他Sass文件以实现复用CSS代码*/
+@import "1-变量声明"; //导入没有下划线的文件，会把全部CSS加载进来
+@import "color"; //导入有下划线的文件，不会把全部CSS加载进来
+
+.nav {
+    border: $basic-border;//引用“1-变量声明.scss”
+    text-decoration: $color-red;//引用“_color.scss”
+}
+
+/*CSS内导入*/
+.body-bg {
+    @import "bg";
+    border: #333333;
+}

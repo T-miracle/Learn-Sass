@@ -1,0 +1,7 @@
+@charset "UTF-8";
+    
+$color-red : red;
+
+//“!default”表示：
+// 如果这个变量被声明赋值了，那就用它声明的值，否则就用这个默认值。
+$green: green !default;

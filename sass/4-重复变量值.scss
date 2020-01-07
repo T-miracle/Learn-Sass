@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import "color";
+    
+$color-red: darkred;
+//“!default”表示：
+// 如果这个变量被声明赋值了，那就用它声明的值，否则就用这个默认值。
+$color-red: #ff7f78 !default;
+
+a {
+    //三个相同的变量的选择顺序：
+    // 包内无“!default” > 包内有“!default” > 包外无“!default” > 包外有“!default”
+    color: $color-red;
+}

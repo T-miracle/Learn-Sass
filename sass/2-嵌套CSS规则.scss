@@ -35,6 +35,7 @@
 /*使用‘&’进行反向嵌套*/
 .box a {
     color: aqua;
+
     #zoom & {
         color: red;
     }
@@ -47,8 +48,42 @@
     }
 }
 
+/*群组选择器的反向嵌套*/
 #zoom, #content {
     .box {
         width: 50px;
+    }
+}
+
+/*子选择器、相邻兄弟选择器和普通（后续）兄弟选择器*/
+article {
+    border: 1px solid #ccc;
+
+    > section {
+        border: 2px dotted #fff000;
+    }
+
+    + p {
+        color: #333333;
+    }
+
+    ~ article {
+        background-clip: border-box;
+    }
+}
+
+/*属性嵌套*/
+nav {
+    border: {
+        style: solid;
+        width: 5px;
+        color: blue;
+    }
+}
+
+nav {
+    border: 1px solid #ccc {
+        left: 0;
+        right: 0;
     }
 }

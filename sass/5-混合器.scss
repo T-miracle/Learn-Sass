@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@mixin rounded-corners {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.notice {
+    background-color: green;
+    border: 2px solid #00aa00;
+    /*混合器注入的代码*/
+    @include rounded-corners;
+}

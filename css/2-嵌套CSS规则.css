@@ -34,8 +34,36 @@
   text-decoration: red;
 }
 
+/*群组选择器的反向嵌套*/
 #zoom .box, #content .box {
   width: 50px;
+}
+
+/*子选择器、相邻兄弟选择器和普通（后续）兄弟选择器*/
+article {
+  border: 1px solid #ccc;
+}
+article > section {
+  border: 2px dotted #fff000;
+}
+article + p {
+  color: #333333;
+}
+article ~ article {
+  background-clip: border-box;
+}
+
+/*属性嵌套*/
+nav {
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+}
+
+nav {
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
 }
 
 /*# sourceMappingURL=2-%C7%B6%CC%D7CSS%B9%E6%D4%F2.css.map */
